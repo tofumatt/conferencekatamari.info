@@ -4,6 +4,10 @@ body {
     font-family: 'Roboto', Helvetica, sans-serif;
 }
 
+a {
+    color: #0a3a76;
+}
+
 p {
     max-width: 525px;
 }
