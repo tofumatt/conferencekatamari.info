@@ -1,0 +1,26 @@
+body {
+    background: url(katamari.jpg) -600px 50% no-repeat;
+    background-size: 640px 360px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+p {
+    max-width: 525px;
+}
+
+.footer {
+    color: #686868;
+    font-size: 75%;
+    margin-top: 5em;
+}
+
+@media (max-width: 635px) {
+    body {
+        background: url(katamari.jpg) -635px 160% no-repeat;
+    }
+
+    #katamari {
+        height: 72px;
+        width: 100%;
+    }
+}
