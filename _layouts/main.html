@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" lang="{{ page.lang }}">
+
+    <title>{{ page.title }}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- iOS-specific meta information; for homescreen web app capabilities -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- iPhone -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 320px)" href="img/default.png">
+    <!-- Retina iPhone -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)" href="img/default@2x.png">
+
+    <!-- Enable Cleartype for MS Browsers -->
+    <meta http-equiv="cleartype" content="on">
+
+    <!-- Responsive and mobile friendly stuff -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet" type="text/css">
+    <link href="normalize.css" media="screen" rel="stylesheet">
+    <link href="gridism.css" media="screen" rel="stylesheet">
+    <link href="style.css" media="screen" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="wrap grid">
+      <div class="unit one-fifth"></div>
+      <div class="unit four-fifths" id="content">
+        {{ content }}
+
+        {% if site.languages %}
+          <ul class="footer">
+            <!-- The English version is the root URL and is thus special. -->
+            <li><a href="/">en</a></li>
+            {% for lang in site.languages %}
+              <li><a href="/{{ lang }}/">{{ lang }}</a></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+        <div id="katamari"></div>
+      </div>
+    </div>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-3850161-16', 'conferencekatamari.info');
+      ga('send', 'pageview');
+
+    </script>
+  </body>
+</html>
+<!-- Into the fire feeling higher than the truth -->

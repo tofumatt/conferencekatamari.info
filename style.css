@@ -15,7 +15,32 @@ p {
 .footer {
     color: #686868;
     font-size: 75%;
+}
+
+p.footer {
     margin-top: 5em;
+}
+
+ul.footer {
+    margin: 0;
+    padding: 0;
+}
+
+ul.footer li {
+    display: inline;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.footer li::after {
+    content: "|";
+    display: inline-block;
+    padding: 0 0 0 3px;
+}
+
+ul.footer li:last-child::after {
+    display: none;
 }
 
 @media (max-width: 635px) {
