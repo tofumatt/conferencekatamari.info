@@ -7,9 +7,9 @@ permalink: /
 
 # Six People to a Group.
 
-## The golden rule for organizing conference outings.
+## The golden rule for organising conference outings.
 
-Are a bunch of your coworkers and friends at DogeConf? Are you meeting for a quarterly review? Chances are, there are a _lot_ of people in town! And you want to hang out with **all of them**!
+Are a bunch of your co-workers and friends at DogeConf? Are you meeting for a quarterly review? Chances are, there are a _lot_ of people in town! And you want to hang out with **all of them**!
 
 ## Please: don’t.
 
@@ -25,7 +25,7 @@ The next time you’re at a conference and you get four people together: **go ge
 
 If a few stragglers join you, you’re still at six. But that’s the limit: no more!
 
-Now you can socialize with everyone at the table!
+Now you can socialise with everyone at the table!
 
 _Bon appétit !_
 
