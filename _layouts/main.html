@@ -28,6 +28,24 @@
     <link href="normalize.css" media="screen" rel="stylesheet">
     <link href="gridism.css" media="screen" rel="stylesheet">
     <link href="style.css" media="screen" rel="stylesheet">
+
+    <!-- Matomo -->
+    <script type="text/javascript">
+      var _paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["disableCookies"]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="https://analytics.octopusth.ink/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '3']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript><p><img src="https://analytics.octopusth.ink/matomo.php?idsite=3&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+    <!-- End Matomo Code -->
   </head>
 
   <body>
@@ -36,29 +54,9 @@
       <div class="unit four-fifths" id="content">
         {{ content }}
 
-        {% if site.languages %}
-          <ul class="footer">
-            <!-- The English version is the root URL and is thus special. -->
-            <li><a href="/">en</a></li>
-            {% for lang in site.languages %}
-              <li><a href="/{{ lang }}/">{{ lang }}</a></li>
-            {% endfor %}
-          </ul>
-        {% endif %}
-
         <div id="katamari"></div>
       </div>
     </div>
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-3850161-16', 'conferencekatamari.info');
-      ga('send', 'pageview');
-    </script>
   </body>
 </html>
 <!-- Into the fire feeling higher than the truth -->

@@ -1,5 +1,4 @@
-The Conference Katamari site. The site is multi-lingual: `en.md` is the (main)
-English site. Other languages are found in the other top-level `**.md` files.
+The Conference Katamari site.
 
 You can see the site at
-[conferencekatamari.info](http://conferencekatamari.info/).
+[conferencekatamari.info](https://conferencekatamari.info/).
