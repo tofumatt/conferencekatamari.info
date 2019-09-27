@@ -48,6 +48,10 @@ ul.footer li:last-child::after {
         background: url(katamari.jpg) -635px 160% no-repeat;
     }
 
+    #content {
+        background: rgba(255, 255, 255, 0.8);
+    }
+
     #katamari {
         height: 72px;
         width: 100%;
